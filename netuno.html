@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<script src="AR.js-master/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
+<script src="AR.js-master/aframe/build/aframe-ar.js"></script>
+
+
+<a-scene embedded arjs>
+    <a-marker preset='custom' type='pattern' url='img/patt/pattern-netu-01.patt'>
+        
+        <a-entity position="0 0 0" rotation="30 100 -90">
+            <a-sphere animation="property: rotation; to: 0 360 0; loop: true; dur: 10000" position="0 0 0" scale="1.5 1.5 1.5" src="https://cdn.glitch.com/cff15167-71d8-4489-a300-828f62bb9ba9%2Fneptuno.jpg?1569905458337">
+            </a-sphere>
+        
+        </a-entity>
+        <a-plane position="0 2 -2" rotation="-100 0 -1" width="3" height="2" material="src:img/text/text_netuno.png; transparent: true">
+        </a-plane>
+
+    </a-marker>
+</a-scene></html>

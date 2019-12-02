@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    
+<script src="AR.js-master/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
+<script src="AR.js-master/aframe/build/aframe-ar.js"></script>
+<meta charset="UTF-8">
+
+<a-scene embedded arjs>
+    <a-marker present="hiro">
+        <a-image src="img/programacao_cultural.jpg" width="3" height="2" rotation="-80 0 0" position="0 0 0"></a-image>
+        <a-plane position="0 2 2" rotation="-100 0 -1" width="2" height="1.5" material="src:img/text/text_programacao_cultural.png; transparent: true">
+        </a-plane>
+    </a-marker>
+    <a-entity camera></a-entity>
+</a-scene></html>
